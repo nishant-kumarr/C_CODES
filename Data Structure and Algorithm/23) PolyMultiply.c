@@ -112,14 +112,14 @@ node *combineTerms(node *head) {        /* FUNCTION TO COMBINE TERMS */
     
     while (current != NULL) {
         node *runner = current;
-        
         while (runner->next != NULL) {
             if (runner->next->pow == current->pow) {
                 current->coef += runner->next->coef;
                 node *temp = runner->next;
                 runner->next = temp->next;
                 free(temp);
-            } else {
+            } 
+            else {
                 runner = runner->next;
             }
         }

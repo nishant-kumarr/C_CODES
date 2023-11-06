@@ -1,3 +1,12 @@
+/*
+
+Hey Visitor ! This is the code of mine that facilitates the following seven operation of a Binary Search Tree.
+Operations are : create, insert, traverse(preorder, inorder, postorder), search and element, find minm and 
+maxm value, and find the height of the Binary search tree.
+Feel free the explore the code below : 
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

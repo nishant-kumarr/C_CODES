@@ -92,8 +92,8 @@ denominations. so, here we have one more way called Dynamic Programming and we h
     two rupee coin as one 2 rupee coin so we will put 1 and for value 3 we can't make value using 2 rupee coin put 0 and for value
     4 we can use two two rupee coins so put 1.
     iv) for rest other [row][columns] if column number is less than the denomination of that row just copy the above row value.
-    v) else you put val1 + val2 (val1 ? -> explained later) at that [row][column] where val1 is value of index of that row but 
-    column one unit less. suppose you are filling row = 5 and column = 3 then, val1 is value of row 4 and column 3.
+    v) else you put val1 + val2 (val1 ? -> explained later) at that [row][column] where val1 is value of index of that column but 
+    row one unit less. suppose you are filling row = 5 and column = 3 then, val1 is value of row 4 and column 3.
     and val2 is value of that index in 2D matrix where row is same as that of we are filling but column is original column that
     we are filling minus denomination (that is present in sorted denomination array) at that row index. for example we are 
     filling 2D matrix at row = 3 and column = 6 and then val1 will be value from matrix at index row = 2 and column = 6 and 
